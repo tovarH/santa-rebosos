@@ -1,0 +1,2 @@
+Images go in this directory.
+Try to classify the images inside other directories.
