@@ -1,0 +1,143 @@
+.logos {
+    padding: 10px;
+    text-align: center;
+}
+img.logo {
+    width: 20%;
+    height: auto;
+}
+
+#logo-lg {
+    display: block;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    float: none;
+}
+
+#logo-sm {
+    display: none;
+}
+
+#navbar {
+    overflow: hidden;
+}
+
+#navbar a {
+    width: 100%;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+#navbar a:hover {
+    background-color: #fafafa;
+    color: #c49f58;
+}
+
+#navbar a.active {
+    color: #c49f58;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    padding:0;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0;
+    display: inline-block;
+    float: left;
+    background-color: #ffffff;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #0d0d0d;
+}
+
+
+nav ul li ul li:hover {
+    color: #c49f58;
+}
+
+nav a:hover {
+    color: #c49f58;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+li > a:after {
+    content: ' +';
+}
+
+li > a:only-child:after {
+    content: '';
+}
+
